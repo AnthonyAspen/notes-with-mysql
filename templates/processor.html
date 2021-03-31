@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+                     minimum-scale=1.0">
+    <title>Processor</title>
+</head>
+<body>
+
+    <form action="/yourNotes" method="POST">
+    <h1 name="id">{{.Id}} </h1>
+    <h2 name="firster">{{.First}} </h2>
+    <h3 name="laster">{{.Second}} </h3> 
+        <label for="noteForm">YourNote</label>
+        
+
+        <input type="text" name="title" placeholder="Title">
+        <textarea name="text" rows="20" cols="20" placeholder="Your Note">
+        </textarea>
+
+        <input type="submit">
+    </form>
+</body>
